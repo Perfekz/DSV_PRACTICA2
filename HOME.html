@@ -6,6 +6,100 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Diccionario</title>
 </head>
+
+<style>
+    body {
+        background-color: rgb(174, 205, 199);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    header {
+        background-color: rgb(111, 156, 151);
+    }
+
+    footer {
+        background-color: rgb(111, 156, 151); 
+        padding: 13px; /*Espaciado interno para que el texto no esté pegado*/
+    }
+
+    /*Párrafos dentro del footer*/
+    footer p {
+        text-align: center;
+        margin: 8px 0; /* Margen arriba y abajo*/
+    }
+
+    table {
+        background-color:rgb(111, 156, 151);
+        border-collapse: collapse; /*Quita espacio entre bordes*/
+        border: 2px solid rgb(45, 98, 106); /*Borde externo*/
+        margin: auto; /*Centra la tabla horizontalmente*/
+    }
+
+    /*Celdas de la tabla*/
+    td {
+        border: 1px solid rgb(45, 98, 106);
+        width: 150px; 
+        height: 50px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /*Enlaces de las celdas*/
+    td a {
+        display: flex; /*Usa flexbox para centrar contenido*/
+        justify-content: center; /*Centrar horizontalmente*/
+        align-items: center; /*Centrar verticalmente*/
+        width: 100%; /*Ocupa toda la celda*/
+        height: 100%; /*Ocupa toda la celda*/
+    }
+
+    /*Enlaces al pasar el mouse sobre la celda*/
+    td a:hover {
+        background-color: rgb(66, 138, 145);
+        color: white;
+    }
+
+    /*Enlaces al hacer clic en la celda*/
+    td a:active {
+        background-color: rgb(45, 98, 106);
+        color: white;
+    }
+
+    section {
+        padding: 10px;
+        text-align: center;
+    }
+
+    div {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /*Lista no ordenada*/
+   ul {
+        list-style-position: inside; /*Viñetas dentro del área de texto*/
+        text-align: center;
+        padding-left: 0; /*Quita el espacio por defecto a la izquierda*/
+        margin: 0 auto; /*Centra el bloque*/
+    }
+
+    /*Párrafos y elementos de lista*/
+    p, li {
+        font-size: 18px;
+    }
+
+    /*Párrafos dentro de div*/
+    div p {
+        margin: 9px;
+    }
+
+    /*Elementos de lista con margen vertical*/
+    li {
+        margin: 7px;
+    }
+</style>
+
 <body>
     <header>
         <h6>Página 1 (HOME)</h6>
@@ -13,7 +107,7 @@
     </header>
 
     <section>
-        <p>Aquí va la introducción.....</p>
+        <p>Bienvenidos al sitio de las mejores definiciones de Panamá.</p>
         <table>
             <tr>
                 <td><a href="letraA.html">A</a></td>
@@ -51,15 +145,19 @@
                 <td>Y</td>
             </tr>
         </table>
-    </section>
-
-    <footer>
-        <h6>Taller Práctico #3</h6>
-        <h6>INTEGRANTES:</h6>
+        <div>
+             <p>Taller Práctico #3</p>
+             <p>INTEGRANTES:</p>
         <ul>
             <li>Erick Hou</li>
             <li>Jessica Zheng</li>
         </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Esta página fue creada por Erick Hou y Jessica Zheng</p>
+        <p>2025</p>
     </footer>
 </body>
 </html>
