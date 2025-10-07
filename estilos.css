@@ -54,6 +54,7 @@ a:hover {
 img {
     width: 100px;
     height: 100px;
+    border: 3px solid rgb(0, 0, 0);
 }
 
 .intro {
@@ -75,9 +76,6 @@ img {
 
 /* El texto dentro del <li> debe ocupar el resto del espacio */
 .intro li img {
-    width: 120px;                  /* Tamaño fijo para las imágenes */
-    height: 120px;
     object-fit: cover;             /* Asegura que la imagen mantenga forma cuadrada */
-    border-radius: 8px;            /* Bordes suaves */
     flex-shrink: 0;                /* Evita que la imagen se deforme si el texto es largo */
 }
